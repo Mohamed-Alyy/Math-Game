@@ -1,7 +1,5 @@
 #include <iostream>
 #include <string>
-#include <vector>
-#include <random>
 #include <cstdlib> // for generate random numbers
 using namespace std;
 
@@ -28,7 +26,7 @@ cout << "Who Many Question You Want ... ?" << endl;
 }
 
 int getRandomNum(int from, int to){
-   return rand() % (to-from+from) + from;
+   return rand() % (to-from+1) + from;
 }
 
 
